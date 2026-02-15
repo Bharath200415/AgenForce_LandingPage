@@ -11,7 +11,7 @@ import { Landingimages } from './landing-images'
 
 export const Hero= () => {
   return (
-    <div className='pt-10 md:pt-20 lg:pt-32 overflow-hidden'>
+    <section className='pt-10 px-2 md:pt-20 lg:pt-32 overflow-hidden'>
         <Container>
             <Heading as='h1'>
               Agents that do the work <br/>  Approvals that keep you safe. 
@@ -26,6 +26,6 @@ export const Hero= () => {
             <Landingimages/>
 
         </Container>
-    </div>
+    </section>
   )
 }
