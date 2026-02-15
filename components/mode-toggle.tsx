@@ -18,7 +18,7 @@ export const ModeToggle = () => {
   }
 
   return (
-    <button onClick={SWITCH} className='size-6 items-center justify-center'>
+    <button onClick={SWITCH} className='size-6 items-center relative justify-center'>
         <SunIcon size={14} className='rotate-0 absolute inset-0 scale-100 transition-all duration-200 dark:rotate-90 dark:scale-0'/>
         <MoonIcon size={14} className='rotate-90 scale-0 absolute inset-0 transition-all duration-200 dark:rotate-0 dark:scale-100'/>
 
