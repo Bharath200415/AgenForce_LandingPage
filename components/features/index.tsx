@@ -2,11 +2,13 @@ import React from 'react'
 import { Heading } from '../heading'
 import { Container } from '../container'
 import { Subheading } from '../subheading'
+import { Card, CardTitle, CardContent, CardCTA, CardSkeleton } from './card'
+import { IconPlus } from '@tabler/icons-react'
 
 export const Features= () => {
   return (
     <Container className="py-10 md:py-20 lg:py-32">
-        <div className="flex items-baseline-last justify-between">
+        <div className="flex items-baseline-last gap-12 justify-between">
             <Heading>
                 Built for Fast Moving <br/> Teams that Need Control.
             </Heading>
@@ -16,6 +18,38 @@ export const Features= () => {
                 auditable, every outcome accountable.
             </Subheading>
         </div>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 my-10 md:my-20'>
+                <Card className='rounded-tl-3xl rounded-bl-3xl'>
+                    <CardSkeleton></CardSkeleton>
+                    <CardContent>
+                        <CardTitle >Prebuilt Agents, Tuned to Your Workflows</CardTitle>
+
+                            <CardCTA>
+                                <IconPlus/>
+                            </CardCTA>
+                    </CardContent>
+                    
+                </Card>
+                <Card>
+                    <CardSkeleton></CardSkeleton>
+                    <CardContent>
+                    <CardTitle>Automate Handoffs, Reduce Ops Friction</CardTitle>
+                            <CardCTA>
+                                <IconPlus/>
+                            </CardCTA>
+                    </CardContent>
+                </Card>
+                <Card className='rounded-tr-3xl rounded-br-3xl'>
+                    <CardSkeleton></CardSkeleton>
+                    <CardContent>
+                    <CardTitle>Approvals, Guardrails, and Full Auditability</CardTitle>
+                            <CardCTA>
+                                <IconPlus/>
+                            </CardCTA>
+                    </CardContent>
+                </Card>
+
+            </div>
     </Container>
   )
 }

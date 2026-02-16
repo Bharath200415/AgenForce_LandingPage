@@ -26,7 +26,7 @@ export const DesktopNavbar=()=>{
     { title: "Pricing", href: "/pricing" },
   ];
   return (
-        <Container className="py-4 px-3 lg:flex items-center justify-between max-w-7xl hidden mx-auto">
+        <Container className="py-4 px-3 lg:flex items-center justify-between max-w-[76rem] hidden mx-auto">
         <Logo/>
         <div className="flex items-center gap-7">
             {navlinks.map((item,index)=>(
