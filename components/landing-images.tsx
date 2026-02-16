@@ -11,7 +11,7 @@ export const Landingimages = ({
   return (
     <div className='relative'>
 
-        <div className="absolute inset-x-0 bottom-0 h-40 md:h-80 w-full mask-t-from-10% bg-background z-50"></div>
+        <div className="absolute inset-x-0 bottom-0 h-40 md:h-80 w-full mask-t-from-10% bg-background z-50 mask-r-from-10%" ></div>
             <div className='relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140  w-full pt-20 perspective-distant translate-x-10 md:translate-x-28 '>
 
                 <motion.div
