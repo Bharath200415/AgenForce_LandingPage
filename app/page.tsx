@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { LogoCloud } from "@/components/logo-cloud";
 import { Features } from "@/components/features";
-import { Container } from "@/components/container";
+import { Hero_v2 } from "@/components/hero_v2";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Hero/>
         <LogoCloud/>
         <Features/>
+        <Hero_v2/>
 
     </div>
   );

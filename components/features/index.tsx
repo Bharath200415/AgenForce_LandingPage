@@ -5,21 +5,23 @@ import { Subheading } from '../subheading'
 import { Card, CardTitle, CardContent, CardCTA, CardSkeleton } from './card'
 import { IconPlus } from '@tabler/icons-react'
 import { SkeletonOne } from './skeletons/first'
+import { SkeletonThree } from './skeletons/third'
+import { SkeletonTwo } from './skeletons/second'
 
 export const Features= () => {
   return (
     <Container className="py-10 md:py-20 lg:py-32">
-        <div className="flex items-baseline-last gap-12 justify-between">
-            <Heading>
+        <div className="flex lg:flex-row flex-col lg:items-baseline-last gap-10 justify-between">
+            <Heading className='text-center lg:text-left'>
                 Built for Fast Moving <br/> Teams that Need Control.
             </Heading>
-            <Subheading>
+            <Subheading className='lg:text-left text-center mx-auto lg:mx-0'>
                 Agents work inside your existing tools, with built-in approvals, brand
                 and policy guardrails, and full traceability. Every action is
                 auditable, every outcome accountable.
             </Subheading>
         </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 my-10 md:my-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 my-10 md:my-20'>
                 <Card className='rounded-tl-3xl rounded-bl-3xl'>
                     <CardSkeleton>
                         <SkeletonOne/>
@@ -34,7 +36,9 @@ export const Features= () => {
                     
                 </Card>
                 <Card>
-                    <CardSkeleton></CardSkeleton>
+                    <CardSkeleton>
+                        <SkeletonTwo/>
+                    </CardSkeleton>
                     <CardContent>
                     <CardTitle>Automate Handoffs, Reduce Ops Friction</CardTitle>
                             <CardCTA>
@@ -43,7 +47,9 @@ export const Features= () => {
                     </CardContent>
                 </Card>
                 <Card className='rounded-tr-3xl rounded-br-3xl'>
-                    <CardSkeleton></CardSkeleton>
+                    <CardSkeleton>
+                        <SkeletonThree/>
+                    </CardSkeleton>
                     <CardContent>
                     <CardTitle>Approvals, Guardrails, and Full Auditability</CardTitle>
                             <CardCTA>

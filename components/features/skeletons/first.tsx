@@ -5,10 +5,10 @@ import { cn } from '@/lib/utils'
 
 export const SkeletonOne = ()=>{
     return (
-        <div className='perspective-distant h-full w-full -translate-y-10 mask-radial-from-50% mask-r-from-50%'
-        style={{
-            transform:'rotateX(30deg) rotateZ(15deg) rotateY(-20deg) scale(1.2)'
-        }}>
+        <div className='perspective-distant h-full w-full -translate-y-10 mask-radial-from-50% mask-r-from-50%
+        rotate-z-15 -rotate-y-20 rotate-x-30 scale-[1.2]'>
+
+
             <SkeletonCard 
             className = "absolute bottom-0 left-11 z-30 max-w-[90%]"
             icon={<IconCircleDashedCheck className='size-4'/>} title="Campaign Planner" description="Creates clear, ready-to-use campaign briefs using product info,
