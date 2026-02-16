@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export const Hero_v2 = () => {
   return (
-    <section className=' pt-10 overflow-hidden'>
+    <section className=' pt-10 md:pt-20 lg:pt-32 relative overflow-hidden'>
         <Container>
             <Heading >
                 Built for Speed, <br/>  Designed for Scale

@@ -27,7 +27,7 @@ export const Landingimages = ({
                     duration:0.5,
                     ease:"easeOut"
                 }}
-                
+                 
                 className='perspective-[4000px] shadow-2xl'>
                     <Image src={secondImageSrc} alt="hero1"
                     height={1080}
