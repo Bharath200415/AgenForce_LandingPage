@@ -6,6 +6,6 @@ export const Container = ({className,children}:{
     children:React.ReactNode;
 }) => {
   return (
-    <div className={cn('max-w-[76em] mx-auto',className)}>{children}</div>
+    <div className={cn('max-w-[76em] mx-auto ',className)}>{children}</div>
   )
 }

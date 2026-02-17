@@ -13,7 +13,8 @@ import {
 
 export const SkeletonOne = () => {
   return (
-    <div className="flex-1 rounded-t-3xl gap-2 flex flex-col bg-neutral-100  dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 max-w-[20rem] lg:max-w-sm mx-auto w-full h-full absolute inset-x-0 p-2">
+    <div className="rounded-t-3xl gap-2 flex-1 flex flex-col bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 
+    max-w-[20rem] lg:max-w-sm mx-auto w-full h-full absolute inset-0 p-2">
       <Card
         topIcon={<FileIcon className="size-4" />}
         title="Connect Data"

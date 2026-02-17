@@ -8,12 +8,11 @@ import { SkeletonTwo } from './skeletons/second';
 
 export const FeaturesSecondary = () => {
   return (
-    <section className='pt-10 md:pt-20 lg:py-32 relative overflow-hidden'>
+    <section className='pt-10 md:pt-20 lg:py-32 relative'>
         <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 border-y border-neutral-200
-            dark:border-neutral-800 divide-x divide-neutral-200 dark:divide-neutral-800'>
-                <div className='p-8'>
-                    
+            dark:border-neutral-800 divide-x divide-neutral-200 dark:divide-neutral-800  '>
+                <div className='px-8 pb-0 pt-8'>
                     <h2 className='text-lg font-bold text-neutral-800'>Agent Studio</h2>
                     <CardDescription>
                         Design, launch and customize AI agents for marketing, sales, support and ops, built around your workflows.
@@ -22,7 +21,7 @@ export const FeaturesSecondary = () => {
                         <SkeletonOne/>
                     </CardSkeleton>
                 </div>
-                <div className='p-8'>
+                <div className='px-8 pt-8 pb-0'>
                     <h2 className='text-lg font-bold text-neutral-800'>Multi-Agent Orchestration</h2>
                     <CardDescription>
                         Coordinate multiple agents across workflows using memory, interrupts and conditional logic.
@@ -45,7 +44,7 @@ export const CardSkeleton = ({className,children}:{
     children?:React.ReactNode;
 })=>{
     return (
-        <div className={cn('relative h-80 mt-8 flex flex-col sm:h-60 md:min-h-96 perspective-distant overflow-hidden ',className)}>
+        <div className={cn('relative mt-8 flex flex-col sm:h-60 md:h-86 perspective-distant overflow-hidden',className)}>
             {children}
         </div>
     )
