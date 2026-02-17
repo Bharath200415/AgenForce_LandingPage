@@ -30,8 +30,8 @@ export const SkeletonTwo = ()=>{
                     <Sheets className='size-8 '/>
                 </RevolvingCard>
 
-                <RevolvingCard className='[--translate-position:250px] [--orbit-duration:30s] size-auto
-                ring-0 shadow-none bg-transparent w-60'>
+                <RevolvingCard className='flex absolute inset-0 m-auto items-center justify-center dark:bg-transparent border border-transparent shadow-black/10 ring-black/10 rounded-sm 
+                animate-orbit [--initial-position:20deg] [--translate-position:250px] [--orbit-duration:30s] size-auto ring-0 shadow-none bg-transparent w-60'>
                     <SkeletonCard 
                     className='absolute bottom-0 left-12 max-w-[90%] z-30'
                     icon={<IconCircleDashedCheck className='size-4'/>}
